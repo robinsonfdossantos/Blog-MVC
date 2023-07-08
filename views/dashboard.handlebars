@@ -1,0 +1,56 @@
+<div class="row">
+  <div class="col-auto">
+    <h2>Welcome, {{name}}!</h2>
+  </div>
+</div>
+<div class="col-md-12 mt-4">
+  <div class="row mt-4">
+    <h3>New Post:</h3>
+
+    <form class="form new-blogpost-form">
+      <div class="form-group">
+        <label for="blog-name">Blog</label>
+        <input class="form-input" type="text" id="blogpost-name" name="blogpost-name" />
+      </div>
+      <div class="form-group">
+        <label for="blogpost-cont">Post</label>
+        <textarea class="form-input" id="blogpost-cont" name="blogpost-cont"></textarea>
+      </div>
+      <div class="form-group">
+        <button type="submit" class="btn btn-primary" id="new-post-btn">New Post</button>
+      </div>
+    </form>
+  </div>
+
+  {{#if posts.length}}
+  <div class="col-md-6 blogpost-list">
+    <h3>Posts</h3>
+
+    {{#each posts as |post|}}
+    <div class="row mb-2 user-blogpost-names-list-item">
+      <div class="col-md-8">
+        <h4><a
+                class="user-blogpost-names-list-item-link"
+                href="/api/post/{{blogpost.id}}"
+              >{{blogpost.name}}</a></h4>
+          </div>
+          <div class="col-md-6 created-by">
+            <p><span id="blogpost-id">{{id}}</span>
+              Created on: 
+              {{format_date blogpost.date_created}}</p>
+          </div>
+          !-- <h4><a href="/post/{{post.id}}">{{post.title}}</a></h4>
+      </div>
+      <div class="col-md-4">
+        <button class="btn btn-sm btn-danger delete-btn" data-id="{{post.id}}">DELETE</button>
+      </div>
+    </div>
+    {{/each}}
+  </div>
+  {{/if}}
+</div>
+
+<script src="./js/post.js"></script>
+<script src="./js/dashboard.js"></script>
+<script src="./js/delete.js"></script>
+<script src="./js/newPost.js"></script>

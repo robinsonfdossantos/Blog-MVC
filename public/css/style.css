@@ -1,0 +1,127 @@
+
+:root {
+  --nav:#7af06a;
+  --body: #d9e9d3;
+  --hover: #ba8a69;
+  --white: #ebf0f5;
+  --gray: #a7a7a7;
+
+}
+header, .blogpost:not(:last-child) {
+    background-color:#6c8130;
+    background-size:cover;
+    border-bottom: 1px solid #ccc;
+}
+
+html {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height: 120%;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color:#d9e9d3;
+}
+
+header h1 {
+    display: flex;
+    font-size: 38px;
+    font-weight: bold;
+    margin: 20px 50px;
+    padding: 10px 15px;
+    display: inline-block;
+    box-shadow: inset;
+    border-radius: 5px;
+    margin-left: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    background-color: #ba8a69;
+    justify-items: center;
+}  
+
+nav {
+  background-color: #bdf046;
+}
+
+nav a {
+    margin: 1.2rem;
+    text-decoration: none;
+    color:#ebf0f5; 
+    font-size: 20px;
+}
+
+nav a:hover {
+    text-decoration: underline;
+    color: #a7a7a7;
+}
+
+.created-by {
+  color: #d9e9d3;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.created-by p {
+  text-align: right;
+  margin: 0;
+  line-height: auto;
+}
+
+.blogpost-desc {
+  margin-top: 0;
+  border-color: #221010;
+  border: 5px solid;
+}
+
+.blogpost-desc p {
+  margin: 20px;
+}
+
+.no-button {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    color: #1b89bc;
+    text-decoration: none;
+    font-size: 100%;
+}
+  
+.no-button:hover {
+    color: #ebf0f5;
+    text-decoration: underline;
+}
+
+.blogpost-name-link {
+    color: #d9e9d3;
+}
+
+.blogpost-name-not-link {
+    color: #d4ae43;
+}
+
+.blogpost-name-link:hover {
+  color: #d9e9d3;
+  text-decoration: none;
+}
+
+#blogpost-id {
+  display: none;
+}
+
+.user-blogpost-names-list-item {
+  display: flex;
+  background-color: #d4ae43;
+  border-radius: 1.5rem;
+}
+
+.user-blogpost-names-list-item-link {
+  margin: 1rem 2rem 1rem 2rem;
+  color: #D5EBD1;
+}
+
+.user-blogpost-names-list-item-link:hover {
+    text-decoration: underline;
+    color:#ebf0f5;
+}
