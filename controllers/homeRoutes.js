@@ -56,4 +56,22 @@ router.get('/login', (req, res) => {
   res.render('login');
 });
 
+
+router.get('/post/:id', (req, res) => {
+  Post.findByPk(req.params.id, {
+      include: [
+          {
+              model: User
+          }
+      ],
+      where: {
+          user_id: req.session.user_id
+      }
+  }).then((posts) => {
+      console.log(posts);
+      console.log(`$ test`)
+      res.render('eachpost', { posts: posts.dataValues });
+  });
+});
+
 module.exports = router;
