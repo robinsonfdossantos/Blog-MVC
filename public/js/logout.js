@@ -1,7 +1,3 @@
-// followed the mini-project's solved folder
-// CHECK THE ID AND CLASS SELECTOR IN HANDLEBARS
-// OTHER THAN THAT, ALL CODES ARE GOOD
-
 const logout = async () => {
     const response = await fetch('/api/users/logout', {
       method: 'POST',
@@ -16,5 +12,5 @@ const logout = async () => {
   };
   
   document
-  .querySelector('#logout') //CHECK THIS CLASS SELECTOR IN HANDLEBARS
-  .addEventListener('click', logout); //CHECK THIS BUTTON IN HANDLEBARS
+  .querySelector('#logout') 
+  .addEventListener('click', logout); 
