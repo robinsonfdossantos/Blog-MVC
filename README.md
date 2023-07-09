@@ -4,7 +4,7 @@ A tech blog created (on going) using MVC methodology, where users can post their
 
 Access the live website and join at: 
 
-
+https://frozen-reaches-55499-e09a777390ae.herokuapp.com/
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-E365FF.svg)](https://opensource.org/licenses/MIT)
 
