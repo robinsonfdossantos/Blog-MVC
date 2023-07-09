@@ -9,11 +9,9 @@ Access the live website and join at:
 [![License: MIT](https://img.shields.io/badge/License-MIT-E365FF.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
----
-```
+
 This is a technology news aggregator that provides users with the latest updates and articles from various tech publications. The application uses an API to fetch news articles, categorizes them based on topics like AI, cybersecurity, and blockchain, and displays them in a clean and user-friendly interface. Users can bookmark articles, share them on social media, and personalize their news feed based on their interests.
 
-```
 
 ## Table of Contents
 ---
@@ -77,13 +75,9 @@ Password": password1234
 + Happy days at http://localhost:3001! 😁
 
 ## Technologies
----
 
-```
 The project was developed employing the *Model-View-Controller (MVC)* methodology depicting Separation of Concerns.
 It incorporated several code libraries including but not limited to the following: `sequelize`, `mysql2`, `express.handlebars`, `express.js`, `node.js` e.t.c.
-
-```
 
 ## Credits
 ---
